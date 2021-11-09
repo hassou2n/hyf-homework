@@ -1,13 +1,12 @@
 * {
-	color: #e8ddcb;
+        color: #e8ddcb;
 	padding: 0;
 	margin: 0;
 	margin-left: 1.3rem;
 }
 
 .background_color {
-	background-color: #033649;
-	
+	background-color: #033649;	
 }
 
 div img {
@@ -32,8 +31,7 @@ div img {
 	font-size: 2.25rem;
 	line-height: 1.125;
 	margin-bottom: 0.5rem;
-	margin-top: 10%;
-	
+	margin-top: 10%;	
 }
 
 .job {
@@ -43,7 +41,7 @@ div img {
 	font-size: 0.75rem;
 }
 
-.hr {
+.line {
 	background-color: #036564;
 	border: none;
 	content: "";
@@ -62,6 +60,7 @@ h3 {
 	padding-top: 15px;
 	padding-left: 15px;
 }
+
 p {
 	padding-top: 15px;
 	padding-left: 30px;
@@ -72,7 +71,7 @@ li {
 	margin-left: 3rem;
 }
 
-.Contact {
+.contact {
 	font-family: sans-serif;
 	width: 300px;
 	padding: 5px;
