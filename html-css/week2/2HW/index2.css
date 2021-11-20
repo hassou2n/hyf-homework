@@ -72,11 +72,14 @@ nav ul li:hover {
     padding-top: 5%;
 }
 .logo1{
-    display: inline;
+    display: flex;
+    flex-wrap:wrap;
+    width: 70%;
+    
 }
 .logo1 img{
   width: 80px;
- 
+  padding: 1%;
 }
 
 footer{
