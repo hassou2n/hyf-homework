@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="logo" />
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Sing up to yourcustomtailor.com</h1>
+    <br>
+    <p>we can't wiat to help you inprove your life-style and gain the attention from people arunde you!</p>
+    <br>
+    <p>Sing up below to save 70% on apparel, hand-bags and cosmetics. Our agents are busy picking the best offers that
+        match your preference and style. Every week we will send you a hand-picked selection - we just need to know a
+        few details about your first... </p>
+    <br>
+    <h1>Step 1/4-tell us who you are?</h1> <br>
+    <h5>Progress</h5>
+    <div class="pgrey">
+        <div class="pgreen"></div>
+    </div>
+    <br>
+    <p>Nice to meet you. Let's spend a minute to get know each other? Please the following:</p>
+    <br>
+
+    <form action="index2.html">
+        <label for="firstname">First name*</label> <input class="text" type="text" id="firstname" required minlength="1"
+            maxlength="30">
+        <label for="lastname">Last name*</label> <input class="text" type="text" id="lastname" required minlength="1"
+            maxlength="30">
+        <br>
+        <label for="state">Country*</label> <select class="text" id="state" required>
+            <option></option>
+            <option value="denmark">Denmark</option>
+            <option value="sweden">Sweden</option>
+            <option value="norway">Norway</option>
+            <option value="finland">Finland</option>
+        </select>
+        <br>
+        <label for="streetaddress">Street address*</label> <input class="text" type="text" id="streetaddress" required
+            minlength="1">
+        <label for="postcode">Post code*</label> <input class="text" type="text" id="postcode" required minlength="1">
+        <br>
+        <label for="profiledescription">Profile Description</label>
+        <input class="pd" type="text" id="profiledescription" required minlength="1">
+
+        <p class="pdtext">Use the same address for billing and shipping? Uncheck below to fill out a separate shipping
+            address.
+        </p>
+        <br>
+        <label class="radio" for="shippinaddress">Shippin address<input type="checkbox" id="shippinaddress">
+        </label>
+
+        <input class="submit" type="submit" value="Next step" />
+    </form>
+
+
+
+
+</body>
+
+</html>

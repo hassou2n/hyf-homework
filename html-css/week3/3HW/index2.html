@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="logo" />
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Sing up to yourcustomtailor.com</h1>
+    <br>
+    <h1>Step 2/4-how can we reach you?</h1>
+    <br>
+    <h5>Progress</h5>
+    <div class="pgrey">
+        <div class="pgreen"></div>
+    </div>
+    <br>
+    <p>We will probably need to stay in touch somehow. Let is konw how we can reah you?</p>
+    <br>
+    <form action="index3.html">
+        <div>
+            <label for="email">Email*</label> <input type="text" id="email" required minlength="1">
+            <label for="phone">Phone</label> <input type="tel" id="phone" required minlength="1">
+            <br>
+            <label for="password">Password*</label> <input type="password" id="password" required minlength="1">
+            <br>
+            <label for="re-enterpassword">Post code*</label> <input type="password" id="re-enterpassword" required
+                minlength="1">
+        </div>
+        <br>
+        <p>I want to sign up for the newsletter</p>
+
+        <label for="weeklynews">Weekly news</label> <input type="radio" id="weeklynews" name="news" value="weeklynews">
+        <label for="monthlynews">Monthly news</label> <input type="radio" id="monthlynews" name="news"
+            value="monthlynews">
+        <label for="dsmn">Don't send me news</label> <input type="radio" id="dsmn" name="news" value="dsmn">
+        <input class="submit" type="submit" value="Next step" />
+    </form>
+</body>
+
+</html>
