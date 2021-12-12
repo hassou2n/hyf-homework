@@ -28,6 +28,42 @@ if (shouldShowResultInDogYears) {
 
 // Housey pricey (A house price estimator)
 
+let Phousewide = 8;
+let Phousedeep = 10;
+let Phousehigh = 10;
+let Phousegarden = 100;
+let Phousecost = 2.500000;
+
+
+let Jhousewide = 5;
+let Jhousedeep = 11;
+let Jhousehigh = 8;
+let Jhousegarden = 70;
+let Jhousecost = 1.000000;
+
+
+let PVolumeInMeters = Phousewide * Phousedeep * Phousehigh * Phousegarden * Phousecost;
+
+let JVolumeInMeters = Jhousewide * Jhousedeep * Jhousehigh * Jhousegarden * Jhousecost;
+
+housePrice = PVolumeInMeters * 2.5 * 1000 + Phousegarden * 300;
+
+housePrice = JVolumeInMeters * 2.5 * 1000 + Jhousegarden * 300;
+
+let priceDifference = Phousecost - housePrice;
+
+if (priceDifference > 0) {
+  console.log(
+    'Peter' +
+      ", you will pay more than the real house price! " +
+      priceDifference
+  );
+} else {
+  console.log('Julia' + ", You got a great deal!");
+}
+
+
+// Ez Namey (Startup name generator) Optional
 let firstWords = [
   "Easy",
   "Awesome",
