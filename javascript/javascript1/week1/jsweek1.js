@@ -1,6 +1,6 @@
 // Age-ify (A future age calculator)
-let yearOfBirth = 1999;
-let yearFuture = 2060;
+const yearOfBirth = 1999;
+const yearFuture = 2060;
 
 let age = yearFuture - yearOfBirth;
 
@@ -8,8 +8,8 @@ console.log("You will be " + age + " years old in " + yearFuture + ".");
 
 // Goodboy-Oldboy (A dog age calculator)
 
-let dogYearOfBirth = 2021;
-let dogYearFuture = 2031;
+const dogYearOfBirth = 2021;
+const dogYearFuture = 2031;
 let dogYear = dogYearOfBirth - dogYearFuture;
 
 const shouldShowResultInDogYears = true;
@@ -32,19 +32,19 @@ let Phousewide = 8;
 let Phousedeep = 10;
 let Phousehigh = 10;
 let Phousegarden = 100;
-let Phousecost = 2.500000;
-
+let Phousecost = 2.5;
 
 let Jhousewide = 5;
 let Jhousedeep = 11;
 let Jhousehigh = 8;
 let Jhousegarden = 70;
-let Jhousecost = 1.000000;
+let Jhousecost = 1.0;
 
+let PVolumeInMeters =
+  Phousewide * Phousedeep * Phousehigh * Phousegarden * Phousecost;
 
-let PVolumeInMeters = Phousewide * Phousedeep * Phousehigh * Phousegarden * Phousecost;
-
-let JVolumeInMeters = Jhousewide * Jhousedeep * Jhousehigh * Jhousegarden * Jhousecost;
+let JVolumeInMeters =
+  Jhousewide * Jhousedeep * Jhousehigh * Jhousegarden * Jhousecost;
 
 housePrice = PVolumeInMeters * 2.5 * 1000 + Phousegarden * 300;
 
@@ -54,14 +54,13 @@ let priceDifference = Phousecost - housePrice;
 
 if (priceDifference > 0) {
   console.log(
-    'Peter' +
+    "Peter" +
       ", you will pay more than the real house price! " +
       priceDifference
   );
 } else {
-  console.log('Julia' + ", You got a great deal!");
+  console.log("Julia" + ", You got a great deal!");
 }
-
 
 // Ez Namey (Startup name generator) Optional
 let firstWords = [
