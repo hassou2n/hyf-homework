@@ -4,7 +4,7 @@ function getFullname(firstname, surname, useFormalName) {
         return "Lord " + firstname + " " + surname;
     } else {
         return firstname + " " + surname;
-    }
+    } 
 }
 const fullname1 = getFullname("Benjamin", "Hughes", true);
 const fullname2 = getFullname("Benjamin", "Hughes", false);
