@@ -1,6 +1,6 @@
 // Age-ify (A future age calculator)
-let yearOfBirth = 1999;
-let yearFuture = 2060;
+const yearOfBirth = 1999;
+const yearFuture = 2060;
 
 let age = yearFuture - yearOfBirth;
 
@@ -8,9 +8,9 @@ console.log("You will be " + age + " years old in " + yearFuture + ".");
 
 // Goodboy-Oldboy (A dog age calculator)
 
-let dogYearOfBirth = 2021;
-let dogYearFuture = 2031;
-let dogYear = dogYearOfBirth - dogYearFuture;
+const dogYearOfBirth = 2021;
+const dogYearFuture = 2031;
+const dogYear = dogYearOfBirth - dogYearFuture;
 
 const shouldShowResultInDogYears = true;
 
