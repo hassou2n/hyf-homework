@@ -2,10 +2,10 @@
 function getFullname(firstname, surname, useFormalName ,gender) {
     if (useFormalName) {
         switch (gender) {
-            case "male":
+            case "m":
             return "Lord " + firstname + " " + surname;
             break;
-            case "female":
+            case "f":
             return "Lady " + firstname + " " + surname;
             break;
             default:
@@ -16,8 +16,8 @@ function getFullname(firstname, surname, useFormalName ,gender) {
         return firstname + " " + surname;
     } 
 }
-const fullname1 = getFullname("Benjamin", "Hughes", true, "male");
-const fullname2 = getFullname("Nine", "Hughes", false, "male");
+const fullname1 = getFullname("Benjamin", "Hughes", true, "m");
+const fullname2 = getFullname("Nine", "Hughes", false, "f");
 
 console.log(fullname1);
 console.log(fullname2);
