@@ -110,3 +110,6 @@ function canBuyMoreCandy() {
     console.log("Enough candy for you!");
 }
 canBuyMoreCandy();
+
+canBuyMoreCandy();
+
