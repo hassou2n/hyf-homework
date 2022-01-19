@@ -10,10 +10,12 @@ console.log("You will be " + age + " years old in " + yearFuture + ".");
 
 const dogYearOfBirth = 2021;
 const dogYearFuture = 2031;
-const dogYear = dogYearOfBirth - dogYearFuture;
 
 let dogYear = dogYearOfBirth - dogYearFuture;
 
+const dogYear = dogYearOfBirth - dogYearFuture;
+
+let dogYear = dogYearOfBirth - dogYearFuture;
 
 const shouldShowResultInDogYears = true;
 
@@ -103,4 +105,7 @@ for (let h = 0; h < firstWords.length; h++) {
       startupName[h].length +
       " characters."
   );
+
 }
+
+};

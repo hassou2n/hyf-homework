@@ -111,3 +111,5 @@ function canBuyMoreCandy() {
 }
 canBuyMoreCandy();
 
+canBuyMoreCandy();
+
