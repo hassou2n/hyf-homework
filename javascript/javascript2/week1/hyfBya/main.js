@@ -11,13 +11,13 @@ function renderProducts(products) {
   for (let i = 0; i < products.length; i++) {
     let product = document.createElement("li");
     product.innerHTML =
-      "<h1>" +
+      "<h3>" +
       products[i].name +
-      "</h1><em> price: " +
+      "</h3><p> price: " +
       products[i].price +
-      "</em><em> rating: " +
+      "</p><p rating: " +
       products[i].rating +
-      "</em>";
+      "</p>";
 
     pUl.appendChild(product);
   }
