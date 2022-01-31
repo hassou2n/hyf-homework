@@ -14,17 +14,18 @@ console.log(danishWords); // returns 'ø'
 const danishString = "Jeg har en blå bil";
 
 function notThisFunctionName(params) {
-  let letterA = params.split(" ").filter((e) => e === "å");
-  return console.log(`total: ${letterA.length + 0} å:${letterA.length} `);
+  let letterA = params.split(" ").filter((e) => e.includes("å"));
+
+  return console.log(`total: ${letterA.length} å:${letterA.length} `);
 }
 notThisFunctionName(danishString); // returns {total: 1, å: 1,}
 
 const danishString2 = "Blå grød med røde bær";
 
 function notThisFunctionName2(params) {
-  let letterÆ = params.split(" ").includes((e) => e === "æ");
-  let letterØ = params.split(" ").filter((e) => e === "ø");
-  let letterÅ = params.split(" ").filter((e) => e === "å");
+  let letterÆ = params.split(" ").filter((e) => e.includes("æ"));
+  let letterØ = params.split(" ").filter((e) => e.includes("ø"));
+  let letterÅ = params.split(" ").filter((e) => e.includes("å"));
 
   return console.log(
     `total: ${letterÆ.length + letterØ.length + letterÅ.length} æ:${
