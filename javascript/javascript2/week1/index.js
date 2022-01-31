@@ -87,7 +87,7 @@ let inputText;
 mybutton.onclick = function fname(event) {
   const section = document.getElementById("section");
   const p = document.createElement("p");
-  p.innerText = inputText + " " + "-" + " " + getRandomAname();
+  p.innerText = `${inputText} - ${getRandomAname()}`;
 
   if (inputText.value != ""){
     section.appendChild(p);
