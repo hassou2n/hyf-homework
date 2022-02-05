@@ -3,10 +3,10 @@
 let numbers = [1, 2, 3, 4];
 
 const newNumbers = numbers
-  .filter(function (params) {
+  .filter(params => {
     return params % 2 !== 0;
   })
-  .map(function (params) {
+  .map(params => {
     return params * 2;
   });
 
@@ -16,21 +16,21 @@ console.log("The doubled numbers are", newNumbers);
 // Working with movies
 
 //1
-const moviesSort = movies.filter(function (params) {
+const moviesSort = movies.filter(params => {
   return params.title.length < 5;
 });
 
 console.log(moviesSort);
 
 //2
-const moviesLong = movies.filter(function (params) {
+const moviesLong = movies.filter(params => {
   return params.title.length > 5;
 });
 
 console.log(moviesLong);
 
 //3
-const moviesBetween = movies.filter(function (params) {
+const moviesBetween = movies.filter(params => {
   return params.year >= 1980 && params.year <= 1989;
 });
 
@@ -42,7 +42,7 @@ const tagMovie = movies.map((element) => {
     element.tag = "Good";
   } else if (element.rating >= 4 && element.rating < 7) {
     element.tag = "Average";
-  } else if (element.rating < 4) {
+  } else {
     element.tag = "Bad";
   }
   return element;
@@ -72,11 +72,11 @@ const moviesKeyworeds = movies.reduce((n, m) => {
 console.log(moviesKeyworeds);
 
 //7
-const moviesTitleDuplicated = movies.filter(function (movie) {
+const moviesTitleDuplicated = movies.filter(movie => {
   const moviesTitle = movie.title.toLowerCase().split(" ");
   let titleDuplicatedWord = [];
   let duplicateWord;
-  moviesTitle.forEach(function (element) {
+  moviesTitle.forEach(element => {
     if (titleDuplicatedWord.includes(element)) {
       duplicateWord = true;
     } else {
@@ -91,11 +91,11 @@ console.log(moviesTitleDuplicated);
 
 //8
 
-const aR = movies.map(function (m) {
+const aR = movies.map(m => {
   return m.rating;
 });
 
-const rR = aR.reduce(function (a, r) {
+const rR = aR.reduce((a, r) => {
   return a + r;
 });
 
