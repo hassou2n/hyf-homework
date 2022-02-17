@@ -1,0 +1,52 @@
+.inputValue {
+    height: 50px;
+    width: 150px;
+    padding-left: 1.5%;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    border-radius: 1.5px;
+  }
+  
+  .buttonForInput {
+    height: 50px;
+    width: 60px;
+    background-color: rgb(240, 108, 108);
+    border: none;
+    border-radius: 1.5px;
+  }
+  
+  .div1 {
+    text-align: center;
+  }
+  
+  .divp {
+    display: flex;
+    justify-content: center;
+  }
+  .divp div {
+    margin: 5%;
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  #map {
+    height: 180px;
+    width: 50%;
+  }
+  #mymap{
+    height: 180px;
+    width: 50%;
+    margin-top: 2%;
+  }
+  
+  .buttonLocation{
+    height: 50px;
+    width: 100px;
+    background-color: rgb(240, 108, 108);
+    border: none;
+    border-radius: 1.5px;
+  }
