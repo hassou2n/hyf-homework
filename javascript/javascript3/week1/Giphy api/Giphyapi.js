@@ -10,8 +10,9 @@ butGiphyapli.addEventListener("click", function () {
     const response = await fetch(apiUri);
     const date = await response.json();
 
-    console.log(date.data);
+    
 
+    inputNumber.addEventListener("onchang", giphyapi(fungifs));
     function fungifs(gifs) {
       divImg.innerHTML = "";
       if (inputNumber.value > 0) {
