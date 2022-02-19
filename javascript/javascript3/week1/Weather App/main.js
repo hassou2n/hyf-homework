@@ -4,7 +4,9 @@ let buttonLocation = document.querySelector(".buttonLocation");
 
 let city = document.querySelector(".city");
 let temp = document.querySelector(".temp");
+
 let iFTWeather = document.querySelector(".iFTWeather");
+let iconimg = document.createElement("img");
 let windspeed = document.querySelector(".windspeed");
 let hClowdy = document.querySelector(".hClowdy");
 let SunrisTo = document.querySelector(".SunrisTo");
@@ -20,15 +22,17 @@ buttonForInput.addEventListener("click", () => {
     console.log(date);
 
     let cityName = ` ${date["name"]}, ${date["sys"]["country"]}`;
-    let temp1 = `Temperature: ${parseInt(date["main"]["temp"])}`;
+    let temp1 = `Temperature: ${
+      date["main"]["temp"]}`;
 
-    let iFTWeather1 = `Icon for the weather type: ${date["weather"][0]["icon"]}`;
+    iconimg.src = `http://openweathermap.org/img/w/${date["weather"][0]["icon"]}.png`;
+
     let windspeed1 = `Wind speed: ${date["wind"]["speed"]}`;
     let hClowdy1 = `Clowdy is: ${date["main"]["feels_like"]}`;
     let Sunrise = new Date(date["sys"]["sunrise"] * 1000);
     let Sunset = new Date(date["sys"]["sunset"] * 1000);
-    let Sunrise1 = `Sunrise is : ${Sunrise.toLocaleTimeString()}`;
-    let Sunset1 = `Sunset is : ${Sunset.toLocaleTimeString()}`;
+    let Sunrise1 = `Sunrise is: ${Sunrise.toLocaleTimeString()}`;
+    let Sunset1 = `Sunset is: ${Sunset.toLocaleTimeString()}`;
 
     let maplat = date["coord"]["lat"];
     let maplon = date["coord"]["lon"];
@@ -44,7 +48,8 @@ buttonForInput.addEventListener("click", () => {
 
     city.innerHTML = cityName;
     temp.innerHTML = temp1;
-    iFTWeather.innerHTML = iFTWeather1;
+    iFTWeather.appendChild(iconimg);
+    iconimg.innerHTML = iconimg;
     windspeed.innerHTML = windspeed1;
     hClowdy.innerHTML = hClowdy1;
     SunrisTo.innerHTML = Sunrise1;
