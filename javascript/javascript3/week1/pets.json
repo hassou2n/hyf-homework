@@ -1,34 +1,36 @@
-{
-  "pets": [
-    {
-      "Type": "Cat",
-      "Kingdom": "Animalia",
-      "Phylum": "Chordata",
-      "Class": "Mammalia",
-      "Order": "Carnivora",
-      "Family": "Felidae"
-    },
-    {
-      "Type": "Dog",
-      "Kingdom": "Animalia",
-      "Phylum": "Chordata",
-      "Class": "Mammalia",
-      "Order": "Carnivora",
-      "Family": "Canidae"
-    },
-    {
-      "Type": "Panda",
-      "Kingdom": "Animalia",
-      "Phylum": "Chordata",
-      "Class": "Mammalia",
-      "Order": "Carnivora",
-      "Family": "Ursidae"
-    },
-    {
-      "Type": "Shark",
-      "Kingdom": "Animalia",
-      "Phylum": "Chordata",
-      "Class": "Chondrichthyes"
-    }
-  ]
-}
+[
+  {
+    "pets": [
+      {
+        "Type": "Cat",
+        "Kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Mammalia",
+        "Order": "Carnivora",
+        "Family": "Felidae"
+      },
+      {
+        "Type": "Dog",
+        "Kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Mammalia",
+        "Order": "Carnivora",
+        "Family": "Canidae"
+      },
+      {
+        "Type": "Panda",
+        "Kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Mammalia",
+        "Order": "Carnivora",
+        "Family": "Ursidae"
+      },
+      {
+        "Type": "Shark",
+        "Kingdom": "Animalia",
+        "Phylum": "Chordata",
+        "Class": "Chondrichthyes"
+      }
+    ]
+  }
+]
