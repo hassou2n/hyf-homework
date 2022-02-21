@@ -21,12 +21,12 @@ buttonForInput.addEventListener("click", () => {
     console.log(date);
 
     const cityName = ` ${date["name"]}, ${date["sys"]["country"]}`;
-    const temp1 = `Temperature: ${date["main"]["temp"]}`;
+    const temp1 = `Temperature: ${date["main"]["temp"]}°F`;
 
     iconimg.src = `http://openweathermap.org/img/w/${date["weather"][0]["icon"]}.png`;
 
-    const windspeed1 = `Wind speed: ${date["wind"]["speed"]}`;
-    const hClowdy1 = `Clowdy is: ${date["main"]["feels_like"]}`;
+    const windspeed1 = `Wind speed: ${date["wind"]["speed"]}m/s`;
+    const hClowdy1 = `Clowdy is: ${date["main"]["feels_like"]}°C`;
     const Sunrise = new Date(date["sys"]["sunrise"] * 1000);
     const Sunset = new Date(date["sys"]["sunset"] * 1000);
     const Sunrise1 = `Sunrise is: ${Sunrise.toLocaleTimeString()}`;
