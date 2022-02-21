@@ -1,16 +1,15 @@
-let inputValue = document.querySelector(".inputValue");
-let buttonForInput = document.querySelector(".buttonForInput");
-let buttonLocation = document.querySelector(".buttonLocation");
+const inputValue = document.querySelector(".inputValue");
+const buttonForInput = document.querySelector(".buttonForInput");
 
-let city = document.querySelector(".city");
-let temp = document.querySelector(".temp");
+const city = document.querySelector(".city");
+const temp = document.querySelector(".temp");
 
-let iFTWeather = document.querySelector(".iFTWeather");
-let iconimg = document.createElement("img");
-let windspeed = document.querySelector(".windspeed");
-let hClowdy = document.querySelector(".hClowdy");
-let SunrisTo = document.querySelector(".SunrisTo");
-let SunsetTo = document.querySelector(".SunsetTo");
+const iFTWeather = document.querySelector(".iFTWeather");
+const iconimg = document.createElement("img");
+const windspeed = document.querySelector(".windspeed");
+const hClowdy = document.querySelector(".hClowdy");
+const SunrisTo = document.querySelector(".SunrisTo");
+const SunsetTo = document.querySelector(".SunsetTo");
 
 buttonForInput.addEventListener("click", () => {
   const apiUri = `http://api.openweathermap.org/data/2.5/weather?q=${inputValue.value}
@@ -21,21 +20,20 @@ buttonForInput.addEventListener("click", () => {
     const date = await response.json();
     console.log(date);
 
-    let cityName = ` ${date["name"]}, ${date["sys"]["country"]}`;
-    let temp1 = `Temperature: ${
-      date["main"]["temp"]}`;
+    const cityName = ` ${date["name"]}, ${date["sys"]["country"]}`;
+    const temp1 = `Temperature: ${date["main"]["temp"]}`;
 
     iconimg.src = `http://openweathermap.org/img/w/${date["weather"][0]["icon"]}.png`;
 
-    let windspeed1 = `Wind speed: ${date["wind"]["speed"]}`;
-    let hClowdy1 = `Clowdy is: ${date["main"]["feels_like"]}`;
-    let Sunrise = new Date(date["sys"]["sunrise"] * 1000);
-    let Sunset = new Date(date["sys"]["sunset"] * 1000);
-    let Sunrise1 = `Sunrise is: ${Sunrise.toLocaleTimeString()}`;
-    let Sunset1 = `Sunset is: ${Sunset.toLocaleTimeString()}`;
+    const windspeed1 = `Wind speed: ${date["wind"]["speed"]}`;
+    const hClowdy1 = `Clowdy is: ${date["main"]["feels_like"]}`;
+    const Sunrise = new Date(date["sys"]["sunrise"] * 1000);
+    const Sunset = new Date(date["sys"]["sunset"] * 1000);
+    const Sunrise1 = `Sunrise is: ${Sunrise.toLocaleTimeString()}`;
+    const Sunset1 = `Sunset is: ${Sunset.toLocaleTimeString()}`;
 
-    let maplat = date["coord"]["lat"];
-    let maplon = date["coord"]["lon"];
+    const maplat = date["coord"]["lat"];
+    const maplon = date["coord"]["lon"];
 
     const map = L.map("map").setView([maplat, maplon], 10);
 
@@ -58,20 +56,23 @@ buttonForInput.addEventListener("click", () => {
   weatherApp();
 });
 
-buttonLocation.addEventListener("click", () => {
-  navigator.geolocation.getCurrentPosition(mylo);
+// I will modify it later
 
-  function mylo(position) {
-    const mymaplat = position.coords.latitude;
-    const mymaplon = position.coords.longitude;
+// let buttonLocation = document.querySelector(".buttonLocation");
+// buttonLocation.addEventListener("click", () => {
+//   navigator.geolocation.getCurrentPosition(mylo);
 
-    const mymap = L.map("mymap").setView([mymaplat, mymaplon], 12);
+//   function mylo(position) {
+//     const mymaplat = position.coords.latitude;
+//     const mymaplon = position.coords.longitude;
 
-    const mytilUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
+//     const mymap = L.map("mymap").setView([mymaplat, mymaplon], 12);
 
-    const mytiles = L.tileLayer(mytilUrl);
-    mytiles.addTo(mymap);
+//     const mytilUrl = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png";
 
-    L.marker([mymaplat, mymaplon]).addTo(mymap);
-  }
-});
+//     const mytiles = L.tileLayer(mytilUrl);
+//     mytiles.addTo(mymap);
+
+//     L.marker([mymaplat, mymaplon]).addTo(mymap);
+//   }
+// });
