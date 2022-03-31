@@ -15,7 +15,6 @@ class Circle {
         return this.radius * 2;
     }
 
-
     getArea(){
     return this.radius * 2;
     }
@@ -26,10 +25,3 @@ const circle = new Circle(10);
 circle.getDiameter(); // 20
 circle.getCircumference();
 circle.getArea();
-
-
-const circle1 = new Circle(10);
-circle1.getDiameter(); // 20
-circle1.getCircumference();
-circle1.getArea();
-
