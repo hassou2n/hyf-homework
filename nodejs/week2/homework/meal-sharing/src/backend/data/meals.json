@@ -1,0 +1,36 @@
+[
+    {
+        "id" : 1,
+        "title" : "Indian food in the summer",
+        "maxNumberOfGuests" : 5,
+        "description" : "A nice night out eating delicious indian food",
+        "createdAt" : "2019/12/7 14:34",
+        "price" : 67
+    },
+    {
+        "id" : 2,
+        "title" : "Dolma",
+        "maxNumberOfGuests" : 12,
+        "description" : "A nice night out eating delicious iraqis food",
+        "createdAt" : "2022/01/01 14:34",
+        "price" : 99
+    },
+    {
+        "id" : 3,
+        "title" : "Biryani",
+        "maxNumberOfGuests" : 5,
+        "description" : "A nice night out eating delicious iraqis food",
+        "createdAt" : "2022/01/01 14:34",
+        "price" : 89
+    },
+    {
+        "id" : 4,
+        "title" : "Kebab",
+        "maxNumberOfGuests" : 5,
+        "description" : "A nice night out eating delicious iraqis food",
+        "createdAt" : "2022/01/01 14:34",
+        "price" : 49
+    }
+]
+
+
