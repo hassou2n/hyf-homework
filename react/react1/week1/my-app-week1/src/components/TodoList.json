@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Get out of bed",
+        "weekdays": "Wed",
+        "months": "Sep",
+        "day": "13",
+        "year": "2017"
+    },
+    {
+        "title": "Brush teeth",
+        "weekdays": "Thu",
+        "months": "Sep",
+        "day": "14",
+        "year": "2017"
+    },
+    {
+        "title": "Eat breakfast",
+        "weekdays": "Fri",
+        "months": "Sep",
+        "day": "15",
+        "year": "2017"
+    }
+]
