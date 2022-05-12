@@ -26,9 +26,9 @@ function TodoList({ fetchUrl }) {
       setTodosState(updatedDescription)
   }
 
-    const handelAddTodo = (event) => {
+    const handAddTodo = (event) => {
     event.preventDefault();
-    const newId = todoList.length=== 0 ? 1 : todoList[todoList.length -1].id + 1;
+    const newId = todoList.length === 0 ? 1 : todoList[todoList.length -1].id + 1;
     const newTodo ={ id: newId, description, deadline}
     setTodosState((prev) => {
       
@@ -41,18 +41,22 @@ function TodoList({ fetchUrl }) {
 const todoItem = todoList.length === 0 ? "No items" : (
 <ul>
 {todoList.map((todo) => (
-  <TodoItem description={todo.description} 
+  <li>
+  <TodoItem
+  description={todo.description} 
   key ={todo.id} 
   id={todo.id} 
   deadline={todo.deadline} 
   delItem = {delItem}   
   updateDescription={updateDescription}>
   </TodoItem>
+  </li>
     ))}
 </ul>)
 
   return (
-    <div onSubmit={handelAddTodo}>
+
+    <div onSubmit={handAddTodo}>
         <form >
           <label>Todo description
             <input type="text" placeholder='Description' name='description' value={description} onChange={(e)=> setDescription(e.target.value)}/>

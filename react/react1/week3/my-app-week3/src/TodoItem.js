@@ -1,45 +1,42 @@
 import React, { useState } from 'react'
 
 function TodoItem({id, description, deadline, delItem, updateDescription}) {
-  const [checked, setChecked] = useState(false);
+  const [checkedbBox, setCheckedBok] = useState(false);
   const [editing, setEditing] = useState(false);
   const [updatingDescription, setUpdatingDescription] = useState('');
 
   const changedBox = (event) => {
-    setChecked(event.target.checked)
+    setCheckedBok(event.target.checked)
   }
 
-  const handelDelet = () => {
+  const handDelet = () => {
     delItem(id)
   }
 
-  const handleEdit = () => {
+  const handEdit = () => {
     setEditing(true);
     setUpdatingDescription(description);
   };
   
-const handleUpdateDescription = (e) => {
+const handUpdateDescription = (e) => {
     const value = e.target.value;
     setUpdatingDescription(value);
 };
 
- //update function
-const updateDescByNewValue = () => {
-        setEditing(false);
-        updateDescription(id, updatingDescription);};
+const updateDesc = () => {
+    setEditing(false);
+    updateDescription(id, updatingDescription);};
 
   return (
     <div>
-      <ul>
-      <div><label htmlFor="is"><span style={checked ? { textDecorationLine: 'line-through'} : {}}> {description} | {deadline} </span><input type="checkbox" id="is" onChange={changedBox}></input> 
-          <button onClick={handelDelet}>Delete</button>
-          <button onClick={handleEdit}>Edit</button>
+      <div><label htmlFor="is"><span style={checkedbBox ? { textDecorationLine: 'line-through'} : {}}> {description} | {deadline} </span><input type="checkbox" id="is" onChange={changedBox}></input> 
+          <button onClick={handDelet}>Delete</button>
+          <button onClick={handEdit}>Edit</button>
           </label>
-          {editing ? (<div><input type="text" value={updatingDescription} onChange={handleUpdateDescription}/></div>) : (null)}
+          {editing ? (<div><input type="text" value={updatingDescription} onChange={handUpdateDescription}/></div>) : (null)}
           <br/>
-          {editing ? (<button onClick={updateDescByNewValue}>Update</button>) : (null)}
+          {editing ? (<button onClick={updateDesc}>Update</button>) : (null)}
         </div>
-        </ul>
       </div>
   )
 }
